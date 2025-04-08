@@ -28,9 +28,9 @@ const walletClient = createWalletClient({
 
 
 const coinParams: CreateCoinArgs = {
-    name: "Tiger",
-    symbol: "TGR",
-    uri: "ipfs://bafkreicevxuczb6bgtqsnq7p7qydpvsgmg2pp3llwgxipzzeby5cs2quke",
+    name: "Eagle",
+    symbol: "EGL",
+    uri: "ipfs://bafkreidoygjxx7fsn6fsfo2thzzwfka32kfl7cja2qzsrmn7fu57umokee",
     payoutRecipient: account.address,
 };
 
@@ -99,9 +99,9 @@ async function isUriValid(uri: string) {
 }
 
 const main = async () => {
-    await createMyCoin(coinParams);
-    //await fetchSingleCoin("0x912fdb24117e0babd1EA0F60c478403D4f99731E", baseSepolia.id);
     //await isUriValid("ipfs://bafkreicevxuczb6bgtqsnq7p7qydpvsgmg2pp3llwgxipzzeby5cs2quke");
+    //await createMyCoin(coinParams);
+    await fetchSingleCoin("0x8Ff1f3927165520e4e896d5bD672155A4935B6a6", base.id);
 };
 
 main().catch((error) => {
